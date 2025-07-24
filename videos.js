@@ -6,10 +6,7 @@ let contador = 0;
 const videos = [
   // seus links de vídeos aqui
   "https://www.youtube.com/embed/8YS0OTL4YkA?si=WCsVA-OEGu7WKJ0j",
-  "https://www.youtube.com/embed/8YS0OTL4YkA?si=WCsVA-OEGu7WKJ0j",
-  "https://www.youtube.com/embed/8YS0OTL4YkA?si=WCsVA-OEGu7WKJ0j",
-  "https://www.youtube.com/embed/8YS0OTL4YkA?si=WCsVA-OEGu7WKJ0j",
-  "https://www.youtube.com/embed/8YS0OTL4YkA?si=WCsVA-OEGu7WKJ0j",
+
 ];
 
 function criaIframe(src, width = 300, height = 300) {
@@ -38,6 +35,20 @@ botao.onclick = function () {
       div.innerHTML = `
         <iframe src="https://sistema01.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
           <a href="https://sistema01.pages.dev/" 
+          style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
+          ABRIR TELA CHEIA
+        </a> 
+      `;
+      resultado.appendChild(div);
+      
+    } 
+
+    if (contador === 5) {
+      // Anúncio para contador 1
+      const div = document.createElement('div');
+      div.innerHTML = `
+        <iframe src="https://conteudo01.pages.dev/" width="350" height="250" frameborder="0" allowfullscreen></iframe>
+          <a href="https://conteudo01.pages.dev/" 
           style="display: inline-block; background-color: blue; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; font-family: sans-serif;">
           ABRIR TELA CHEIA
         </a> 
